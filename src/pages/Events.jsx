@@ -34,8 +34,8 @@ const Events = () => {
             {/* Header */}
             <section className="relative py-16 md:py-24 overflow-hidden">
                 <div className="absolute inset-0">
-                    <div className="absolute top-0 left-1/4 w-96 h-96 bg-secondary/15 rounded-full blur-3xl" />
-                    <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
+                    <div className="absolute top-0 left-1/4 w-96 h-96 bg-secondary/15 rounded-full blur-3xl transform-gpu" />
+                    <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-accent/10 rounded-full blur-3xl transform-gpu" />
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 md:px-8 text-center">
@@ -82,7 +82,7 @@ const Events = () => {
                             <motion.div
                                 key={event.id}
                                 variants={itemVariants}
-                                className="group bg-white/5 backdrop-blur border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-primary/30 transition-all duration-300"
+                                className="group bg-white/5 backdrop-blur border border-white/10 rounded-2xl overflow-hidden p-6 hover:border-primary/30 transition-all duration-300 transform-gpu"
                             >
                                 <div className="flex flex-col md:flex-row gap-6 items-center">
                                     {/* Tilted Card Image */}
@@ -195,7 +195,7 @@ const Events = () => {
                                         displayOverlayContent={true}
                                         overlayContent={
                                             <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black/40 rounded-[15px]">
-                                                <span className="px-4 py-2 bg-primary/90 rounded-full text-white text-xs font-bold backdrop-blur">
+                                                <span className="px-4 py-2 bg-primary/90 rounded-full text-white text-xs font-bold backdrop-blur transform-gpu">
                                                     Completed
                                                 </span>
                                             </div>
